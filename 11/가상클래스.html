@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상클래스</title>
+
+    <style>
+        a {
+            text-decoration: none;
+            /* 링크 아래 생기는 밑줄을 없앰 */
+            /* body안에 있는 모든 a태그에 적용 */
+            color: black;
+            /* 링크는 걸려 있지만 모두 동일 하게 검정으로 색 변경 */
+        }
+
+        /* 순서가 매우 중요, 클래스 선택자 우선 순위 */
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+            /* 링크 방문하고 나면 */
+        }
+
+        a:hover {
+            color: orange;
+            /* 마우스 올려놓으면 */
+        }
+
+        a:active {
+            color: red;
+            /* 링크를 누르고 있으면 */
+        }
+
+        a:focus {
+            color: white;
+            /* 키보드 탭키를 눌러서 포커스 됐을 때 */
+        }
+
+        /* 하위선택자 */
+        nav.gnb ul li a {
+            color: green;
+            /* nav에 클래스 지정해놓지 않으면 위의
+               가상클래스들이 우선순위 점수가 높아 먼저 적용 */
+        }
+
+        /* 자식 선택자 */
+        nav.gnb > ul > li >a {
+            color : red;
+        }
+
+        /* nth-child 선택자 */
+        nav.gnb > ul > li > ul > li > a {
+            color: blue;
+        }
+        nav.gnb > ul > li > ul > li:first-child > a {
+            color: yellow;
+        }
+        nav.gnb > ul > li > ul > li:nth-child(2) > a {
+            color: purple;
+        }
+        nav.gnb > ul > li > ul > li:nth-child(3) > a {
+            color: aqua;
+        } 
+        nav.gnb > ul > li > ul > li:last-child > a {
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="gnb">
+        <h2>주메뉴</h2>
+        <ul>
+            <li><a href="#">메뉴1</a></li>
+                <ul>
+                    <li><a href="#">하위메뉴1-1</a></li>
+                    <li><a href="#">하위메뉴1-2</a></li>
+                    <li><a href="#">하위메뉴1-3</a></li>
+                </ul>
+            <li><a href="#">메뉴2</a></li>
+                <ul>
+                    <li><a href="#">하위메뉴2-1</a></li>
+                    <li><a href="#">하위메뉴2-2</a></li>
+                    <li><a href="#">하위메뉴2-3</a></li>
+                </ul>
+            <li><a href="#">메뉴3</a></li>
+                <ul>
+                    <li><a href="#">하위메뉴3-1</a></li>
+                    <li><a href="#">하위메뉴3-2</a></li>
+                    <li><a href="#">하위메뉴3-3</a></li>
+                </ul>
+            <li><a href="#">메뉴4</a></li>
+                <ul>
+                    <li><a href="#">하위메뉴4-1</a></li>
+                    <li><a href="#">하위메뉴4-2</a></li>
+                    <li><a href="#">하위메뉴4-3</a></li>
+                </ul>
+        </ul>
+    </nav>
+</body>
+</html>

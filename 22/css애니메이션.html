@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 애니메이션</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: url(img/ruler.jpg) no-repeat 0 0;
+        }
+
+        div {
+            position: relative;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid red;
+            background-color: yellow;
+            
+
+            animation: ani 10s linear 0s infinite alternate;
+            /* 애니메이션은 호버 하지 않아도 작동함
+                alternate(역방향)
+                ani->keyframes에서 지정한 모션의 이름
+                animation-duration : 애니메이션 총 시간
+                animation-timingfunction : 가속도 (linear, ease,eas-in, ease-out, ease-in-out, cubic-bazier)
+                animation-delay : 대기시간
+                animation-iteration : 반복횟수 (infinite-무한)
+                animation-direction : 방향 (alternate-역방향) */
+        }
+        @keyframes ani{
+            0%{left:0;}
+            50%{top:50px}
+            100%{left:1000px;
+                 border: 10px solid blue;
+                 background-color: aqua;}
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

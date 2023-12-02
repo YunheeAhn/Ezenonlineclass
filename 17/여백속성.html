@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여백속성</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            /* 전체 선택자 (*)-> 우선순위 0점 */
+        }
+        body {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        #wrap {
+            width: 400px;
+            height: 400px;
+            background-color: gray;
+            color: #fff;
+
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #top {
+            width: 310px;
+            height: 120px;
+            background-color: red;
+            border: 5px solid #000;
+            /* 박스모델 : (내용물 width, height) + border 테두리선 = 실제 크기 증가 */
+            
+            padding: 20px;
+            /* border안쪽 여백이 늘어남 
+               각각 줄 수도 있음 0px 0px 0px 0px 시계 방향 */
+            
+            margin-bottom: 20px;
+            }
+
+        #bottom {
+            width: 360px;
+            height: 170px;
+            background-color: blue;
+            border: 5px solid #000;
+            /* 박스모델 : (내용물 width, height) + border 테두리선 = 실제 크기 증가 */
+            
+            padding: 20px;
+            box-sizing: border-box;
+            /* box-sizing:border-box; 보더와 패딩 값이 실제 크기에 포함되지 않게 함 */
+            
+            overflow: hidden;
+            /* 박스 바깥쪽 넘치는 내용을 안보이게 함 */
+        }
+
+        /* 패딩과 마진 보더 값을 고려 해서 가로세로 높이 지정 */
+    
+    /* 패딩과 마진 값 적는 방법 */
+    /* margin : 00px;               -> top, right, bottom, left
+       margin : 00px 00px;          -> top-bottom, right-left
+       margin : 00px 00px 00px      -> top, right-left, bottom
+       margin : 00px 00px 00px 00px -> top, right, bottom, left*/
+    
+    
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="top">
+            Top
+        </div>
+
+        <div id="bottom">Bottom
+            BottomBottomBottom<br/>
+            BottomBottomBottom<br/>
+            BottomBottomBottom<br/>
+        </div>
+    </div>
+    
+    <ul>
+        <li>리스트</li>
+        <li>리스트</li>
+        <li>리스트</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹폰트</title>
+    <!-- 구글폰트 링크로 적용하기 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+        /* 구글폰트 임포트로 적용하기 */
+        @import url('http://fonts.googleapis.com/css2?family=Nanum+gothic&display=swap');
+        p {
+            font-size: 30px;
+        }
+        /* 구글폰트 */
+        @font-face {
+            /* 폰트 사용 선언 */
+            /* 구글 폰트에서 다운로드 받은 후 폴더에서 경로지정 */
+            font-family: roboto-light;
+            src: url(Roboto/Roboto-Light.ttf);
+        }
+        .text1{
+            font-family: roboto-light;
+        }
+
+        @font-face {
+            font-family: notosansKR_black;
+            src: url(notosansKR/NotoSansKR-Black.ttf);
+        }
+        .text2 {
+            font-family: notosansKR_black;
+        }
+
+        .text3 {
+            font-family: 'Nanum_Gothic',sans-serif;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <p class="text1">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+    <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+    <p>abcdefghijklmnopqrstuvwxyz</p>
+
+    <p class="text2">노토산스블랙 / 모든 인류 구성원의 천부의 존엄성과 
+        동등하고 양도할 수 없는 권리를 인정하는</p>
+
+    <p class="text3">나눔고딕 / 모든 인류 구성원의 천부의 존엄성과 
+        동등하고 양도할 수 없는 권리를 인정하는</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</body>
+</html>

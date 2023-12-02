@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색상 rgb, rgba, 색상코드</title>
+    <style>
+        div {
+            width: 300px;
+            height: 30px;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Dotum,"돋움",sans-serif;
+            text-align: center;
+        }
+
+        div:nth-child(1){
+            background-color: rgb(255, 0, 0);
+            color: rgb(0,0,0,0.2);
+        }
+
+        div:nth-child(2){
+            background-color: rgba(255, 0, 0, 0.7);
+            /* 0.8 이 값을 알파값=불투명도 */
+            /* 1은 완전 불투명, 0은 완전 투명 */
+            color: rgb(0,0,0,0.4);
+        }
+
+        div:nth-child(3){
+            background-color: rgb(255, 0, 0, 0.4);
+            color: rgb(0,0,0,0.6);
+        }
+
+        div:nth-child(4){
+            background-color: rgb(255, 0, 0, 0.1);
+            color: rgb(0,0,0,0.8);
+        }
+
+        div:nth-child(5){
+            background-color: rgb(255, 0, 0, 0);
+            color: rgb(0,0,0,1);
+        }
+
+        /* 색상코드는 16진수, 0~9,a,b,c,d,e,f
+            0~255, ff=255 */
+        /* white #ffffff */
+        /* black #000000 */
+        /* red #ff0000 */
+        /* gren #00ff00 */
+        /* blue #0000ff */
+        /* gray #808080 RGB 요소가 모두 같을때 회색 */
+    </style>
+</head>
+<body>
+    <div>RGBA</div>
+    <div>RGBA</div>
+    <div>RGBA</div>
+    <div>RGBA</div>
+    <div>RGBA</div>
+</body>
+</html>

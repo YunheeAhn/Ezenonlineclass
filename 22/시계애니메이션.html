@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time animation</title>
+    <style>
+        .clock {
+            position: relative;
+            
+            width: 500px;
+            height: 500px;
+            margin: 100px 300px;
+            border: 1px solid red;
+            border-radius: 50%;
+        }
+
+        div.h {
+            position: absolute;
+            left:50%;
+            top: 200px;
+
+            width: 10px;
+            height: 50px;
+            background-color: red;
+
+            animation: ani 43200s linear 0s infinite normal;
+
+        }
+
+        div.m {
+            position: absolute;
+            left: 50%;
+            top: 100px;
+
+            width: 10px;
+            height: 150px;
+            background-color: green;
+
+            animation: ani 3600s linear 0s infinite normal;
+        }
+        div.s {
+            width: 10px;
+            height: 250px;
+            background-color: blue;
+
+            position: absolute;
+            left: 50%;
+            top: 0%;
+
+            animation: ani 60s linear 0s infinite normal;
+        }
+
+        @keyframes ani {
+            0% { transform: rotate(0);
+                 transform-origin: center bottom;}
+            100% { transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="h"></div>
+        <div class="m"></div>
+        <div class="s"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* text.css */
+
+.size { 
+    font-size: 30px;
+    /* 글씨 사이즈 */
+}
+
+.family {
+    font-family: Dotum,"돋움",sans-serif;
+    /* 글씨체 변경 */
+}
+
+.weight {
+    font-weight: bold;
+    /* 강한강조, 굵게 */
+}
+
+strong,h3 {
+    font-weight: normal;
+    /* 강하게 강조된 글자 원래대로 */
+}
+
+.style {
+    font-style: italic;
+    /* 기울임 */
+}
+
+.variant {
+    font-variant: small-caps;
+    /* small-caps는 작은 글씨 대문자로 표기 */
+}
+
+.line { 
+    line-height: 300%;
+    font-size: 16px;
+    /* 줄간격 */
+    /* 바디에 잇는 기본 글자 사이즈는 16px */
+}
+
+.indent {
+    text-indent: 50px;
+    /* 한 문단의 첫번째 줄 들여쓰기, -로 표기하면 내어쓰기로 됨 */
+}
+
+.underline {
+    text-decoration: underline;
+    /* 다양한 데코레이션이 있음
+        overline, line-through */
+        /* a태그 사용시 밑줄 생기는데 text-decoration:none이라고 하면 밑줄 없앰 */
+}
+
+.align {
+    text-align: justify;
+    /* justify는 양쪽 정렬 */
+}

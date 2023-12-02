@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>그라데이션효과</title>
+    <style>
+        div {
+            width: 400px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        /* 선형 그라디언트 */
+        .grad1 {
+            background: #f00;
+            background: linear-gradient(to bottom, #f00, #00f);
+            /* 방향은 top, right, bottom, left */
+            /* to left top, to right bottom 이런식으로도 됨, 사선방향 */
+            /* 각도로도 지정 가능 ex)45deg, 32deg */
+        }
+        .grad2 {
+            background: linear-gradient(to bottom, #f00 0%, #0f0 50%, #00f 100%);
+            /* 더 다양한 색상을 넣으려면 색상 위치, 색상 위치 */
+        }
+
+        /* 원형 그라디언트 radial gradient */
+        .grad3 {
+            background: radial-gradient(#f00 0%, #0f0 50%, #00f 100%);
+            /* 기본 모양은 타원형 */
+        }
+        .grad4 {
+            background: radial-gradient(circle,#f00 0%, #0f0 50%, #00f 100%);
+            /* circle로 하면 모양이 정원으로 */
+        }
+        .grad5 {
+            background: radial-gradient(closest-side at 30% 30%, red, green, blue);
+            /* closest-side 가장 가까운 면, closest-corner 가장 가까운 모서리 
+            at 00% 00% 하면 위치를 나타냄 */
+        }
+        .grad6 {
+            background: radial-gradient(farthest-side at 50% 50%, red, green, blue);
+            /* farthest-side 가장 멀리 있는 면, farthest-corner 가장 멀리 있는 모서리 */
+        }
+
+        /* 패턴 그라디언트 */
+        .grad7 {
+            background: repeating-linear-gradient(red, red 20px, blue 20px, blue, blue 40px);
+            /* 선형 패턴으로 계속 반복 */
+        }
+        .grad8 {
+            background: repeating-radial-gradient(red, red 20px, blue 20px, blue, blue 40px);
+            /* 원형 패턴으로 계속 반복 */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+    <div class="grad3"></div>
+    <div class="grad4"></div>
+    <div class="grad5"></div>
+    <div class="grad6"></div>
+    <div class="grad7"></div>
+    <div class="grad8"></div>
+    <div class="grad9"></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멀티미디어태그</title>
+</head>
+<body>
+    <!-- 동영상 태그 -->
+    <video width="640" height="360" muted controls autoplay loop poster="img/sea.jpg">
+        <!-- muted 음소거, controls 컨트롤박스, autoplay 자동재생, loop 반복, poster 썸네일 -->
+        <source src="video/sea.mp4" type="video/mp4">
+        <!-- 이미지 넣는 것 처럼 파일 넣고, 타입 선언 -->
+    </video>
+
+<hr/>
+    <!-- 오디오 태그 -->
+    <audio muted autoplay controls loop>
+        <!-- 음소거 자동재생 컨트롤버튼 무한반복 -->
+        <source src="audio/song.mp3" type="audio/mp3">
+        <source src="audio/song.ogg" type="audio/ogg">
+        <!-- 폴더명/파일이름.확장자,  폴더명/확장자 -->
+        <!-- 이미지 넣는 것 처럼 파일 넣고, 타입 선언 -->
+    </audio>
+
+    <!-- 오디오, 비디오 태그 모두 소스를 두 개 이상 넣을 수 있음 -->
+    <!-- html5에선, 비디오와 오디오 태그가 생기면서 편하게 넣을 수 있게 됨 -->
+
+<hr/>
+    <!-- 유튜브 영상 삽입 -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YCFEgLm8bus?si=ljS-T9gVI4IG8orc" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- 해당 유튜브의 공유-> 퍼가기 아이프레임 태그 긁어오기 -->
+
+    <!-- 속성=속성값 동일 한 경우 속성 이름만 사용 -->
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+    <style>
+        p:before {
+            content : "before" ;
+            color : red;
+        }
+
+        p:after {
+            content: "after";
+            color: blue;
+        }
+
+        h1:first-letter {
+            color: orange;
+        }
+
+        h2:first-line {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 가상요소 종류 : before, after, first-line, first-letter -->
+    <p>가상의 컨텐츠를 이전 before 또는 이후 after에 추가하는 가상요소</p>
+    <h1>first-letter는 첫번째 글자를 선택해서 스타일 적용을 해준다</h1>
+    <h2>first-line은 첫번째 줄을 선택해서 스타일을 적용한다.
+        first-line은 첫번째 줄을 선택해서 스타일을 적용한다.
+        first-line은 첫번째 줄을 선택해서 스타일을 적용한다.
+        first-line은 첫번째 줄을 선택해서 스타일을 적용한다.
+        first-line은 첫번째 줄을 선택해서 스타일을 적용한다.</h2>
+</body>
+</html>

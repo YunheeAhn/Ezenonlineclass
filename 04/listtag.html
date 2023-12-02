@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록태그의 종류</title>
+</head>
+<body>
+    <!-- 목록태그종류 -->
+    <!-- ol 순서형 목록, ul 비순서형 목록, dl 정의형(서술형) 목록 -->
+
+    <ol>
+        <li>순서형 목록1
+            <h1>title</h1>
+            <p>sentence</p>
+        </li>
+        <li>순서형 목록2
+            <ol>
+                <li>순서형 목록2-1</li>
+                <li>순서형 목록2-2</li>
+            </ol>
+        </li>
+        <li>순서형 목록3
+            <ul>
+                <li>비순서형 목록3-1</li>
+                <li>비순서형 목록3-2</li>
+            </ul>
+        </li>
+        <li>앞에 숫자가 붙는게 특징</li>
+        <li>순서가 중요한 목록을 마크업할때 사용</li>
+    </ol>
+    <!-- 순위, 절차, 순서가 중요한 경우 사용-->
+
+    <ul>
+        <li>비순서형 목록
+            <h1>title</h1>
+            <p>sentence</p>
+        </li>
+        <li>비순서형 목록2
+            <ol>
+                <li>순서형 목록2-1</li>
+                <li>순서형 목록2-2</li>
+            </ol>
+        </li>
+        <li>비순서형 목록3
+            <ul>
+                <li>비순서형 목록3-1</li>
+                <li>비순서형 목록3-2</li>
+            </ul>
+        </li>
+        <li>앞에 불릿이 붙는게 특징</li>
+        <li>순서가 중요하지 않은 목록을 마크업할때 사용</li>
+    </ul>
+    <!-- 두 개 이상의 메뉴, 조직도 등 하단에 나열해야 하는 경우 사용 -->
+    <!-- ol과 ul의 엘리먼트로는 li만 가능하고, li안에는 다른 엘리먼트 가능 -->
+    
+    <dl>
+        <dt>용어의 제목</dt>
+        <dd>용어의 설명, 해설, 해석이 들어가요</dd>
+        <dt>용어의 제목</dt>
+        <dd>용어의 설명, 해설, 해석이 들어가요</dd>
+    </dl>
+    <dl>
+        <dt>용어의 제목</dt>
+        <dd>용어의 설명, 해설, 해석이 들어가요</dd>
+        <dd>용어의 설명, 해설, 해석이 들어가요</dd>
+        <dd>용어의 설명, 해설, 해석이 들어가요
+            <ol>
+                <li>리스트1</li>
+                <li>리스트2</li>
+            </ol>
+            <ul>
+                <li>리스트1</li>
+                <li>리스트2</li>
+            </ul>
+        </dd>
+    </dl>
+    <!-- 인물 소개, 어떠한 용어에 대한 설명 등 한 주제에 대한 설명이 필요한 경우 사용 -->
+
+</body>
+</html>

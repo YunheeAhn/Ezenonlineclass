@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트랜스폼 2D속성</title>
+    <style>
+        img {
+            margin: 100px;
+        }
+
+        .ratate {
+            transform: rotate(15deg);
+            /* 00deg만큼 회전 */
+        }
+
+        .scale {
+            transform: scale(2);
+            /* 숫자만큼 크기 조절
+                정수는 크게, 소수점은 작게
+                또한 scale(가로,세로)
+                scaleX(),scaleY() */
+        }
+
+        .skew {
+            transform: skew(15deg);
+            /* 00deg만큼 기울임->사변형꼴 
+               skew(0,00deg) 세로로기울임 
+               skewX(각도)-가로, skewY(각도)-세로 */
+        }
+
+        .translate {
+            transform: translate(100px,100px);
+            /* 위치이동, translate(x,y)
+                translateX(값)-가로, translateY(값)-세로
+                -값도 지정 가능 -> 왼쪽, 위로 이동
+                +값 -> 오른쪽, 아래 이동 */
+
+        }
+
+        .origin {
+            transform: rotate(15deg);
+            transform-origin: center center;
+            /* 중심축 지정, center center가 기본값 */
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <img class="ratate" src="img/flower.jpg" alt="" />
+        <img class="scale" src="img/flower.jpg" alt="" />
+        <img class="skew" src="img/flower.jpg" alt="" />
+        <img class="translate" src="img/flower.jpg" alt="" />
+        <img class="origin" src="img/flower.jpg" alt="" />
+
+    </figure>
+</body>
+</html>

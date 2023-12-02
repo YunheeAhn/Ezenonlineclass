@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css박스모델</title>
+    <style>
+        div {
+            background-color: yellow;
+            width: 500px;
+            height: 100px;
+            /* div는 블록레벨요소로, 가로 길이기 100%임 */
+            /* 인라인요소로 만들 수 있는 방법이 있다 */
+            /* 방법은 display : inline; */
+        }
+
+        span {
+            background-color: aqua;
+            width: 500px;
+            height: 100px;
+            /* 인라인요소는 가로 세로값 적용X */
+            /* 그래서 display 속성 사용 */
+            /* 종류 : block, inline, inline-block, none 등 */
+            display: block; 
+            /* 블록레벨요소->인라인요소 */
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+            /* border : 10px, solid, black 이렇게 하는것도 가능 */
+        }
+
+        span:nth-of-type(1) {
+            border-radius: 30px;
+        }
+
+        span:nth-of-type(2) {
+            border-radius: 30px 30px 0 0;
+            /* top-left, top-right 방향 */
+        }
+
+        span:nth-of-type(3) {
+            border-radius: 0 0 30px 30px;
+            /* bottom-left, bottom-right 방향 */
+        }   
+
+        ul {
+            list-style : none;
+        }
+        li {
+            background-color: yellow;
+            display: inline-block;
+            /* inline-block은 블록레벨 요소를 갖지만 옆으로 붙을 수 있음 */
+            width: 100px;
+            height: 50px;
+            
+            border-top: 3px solid red;
+            border-right: 3px dotted green;
+            border-bottom: 3px dashed blue;
+            border-left: 3px double black;
+            /* border넣을 때 다양한 스타일로 넣을 수도 있음 */
+        }
+
+        p {
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div>블록레벨요소</div>
+    <span>인라인요소</span>
+    <span>인라인요소</span>
+    <span>인라인요소</span>
+
+    <ul>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+    </ul>
+
+    <p>동그라미</p>
+</body>
+</html>

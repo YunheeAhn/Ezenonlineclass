@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형웹 media queri</title>
+    <style>
+        div {
+            width: 100%;
+            height: 700px;
+        }
+
+        @media screen and (min-width:1280px) {
+            /* pc size 1280~max */
+            div {
+                background-color: red;
+            }
+        }
+
+        @media  screen and (min-width:768px) and (max-width:1279px) {
+            /* tablet size 768~1279 */
+            div {
+                background-color: green;
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            /* mobile size 0~767px */
+            div {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
